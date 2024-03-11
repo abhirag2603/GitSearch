@@ -310,6 +310,18 @@ body{
     transform: translateY(-12px);
   }
 
+@media screen and (max-width: 600px) {
+  .card {
+    width: 200px;
+    height: 80px;
+  }
+  
+  .repocard {
+    width: 200px;
+    height: 80px;
+  }
+}
+
   .namedes{
     display: flex;
     flex-direction: column;
