@@ -8,7 +8,7 @@ const Repocards = (props) => {
         <div className='namedes'><h3 style={{color: "#EE6C4D"}}>
          {props.data.name}
         </h3>
-        {props.data.description&&<span>Description: {props.data.description}</span>}
+        {props.data.description&&<span className='repodes'>Description: {props.data.description}</span>}
         </div>
         <div className='langwat'>
         <span className='lang'>{props.data.language}</span>

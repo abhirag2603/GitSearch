@@ -291,18 +291,7 @@ body{
   align-items: center;
   justify-content: space-between;
   transition: all 0.5s;
-  }
-
-  @media screen and (max-width: 600px) {
-    .card {
-      width: 200px;
-      height: 80px;
-    }
-    
-    .repocard {
-      width: 200px;
-      height: 80px;
-    }
+  overflow: hidden;
   }
 
   .repocard:hover{
@@ -310,15 +299,28 @@ body{
     transform: translateY(-12px);
   }
 
-@media screen and (max-width: 600px) {
-  .card {
-    width: 200px;
-    height: 80px;
+@media screen and (max-width: 768px) {
+  .flwlist {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 2em;
+     
   }
-  
+
+  .card {
+    max-width: 150px; 
+  }
+
+  .reposlist {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    row-gap: 2em;
+  }
+
   .repocard {
-    width: 200px;
-    height: 80px;
+    max-width: 150px;
+  }
+
+  .repodes{
+    display: none;
   }
 }
 
